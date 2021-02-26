@@ -1,0 +1,26 @@
+[
+  {
+    "remote"      : "github",
+    "repository"  : "clarencelol/android_vendor_xiaomi_MiuiCamera",
+    "target_path" : "vendor/xiaomi/MiuiCamera",
+    "branch"      : "master"
+  },
+  {
+    "remote"      : "github",
+    "repository"  : "clarencelol/hardware_qcom-caf_sdm660_media",
+    "target_path" : "hardware/qcom-caf/msm8998/media",
+    "branch"      : "sdm660-4.19"
+  },
+  {
+    "remote"      : "github",
+    "repository"  : "clarencelol/hardware_qcom-caf_sdm660_display",
+    "target_path" : "hardware/qcom-caf/msm8998/display",
+    "branch"      : "sdm660-4.19"
+  },
+  {
+    "remote"      : "github",
+    "repository"  : "clarencelol/hardware_qcom-caf_sdm660_audio",
+    "target_path" : "hardware/qcom-caf/msm8998/audio",
+    "branch"      : "sdm660-4.19"
+  }
+]
