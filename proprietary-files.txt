@@ -735,11 +735,12 @@ vendor/lib/libsubsystem_control.so|fe08da9f6a0e73a97231055c4ca8279a68432476
 vendor/lib64/libSubSystemShutdown.so|c934b2df57be86fdfb9bdf2046f9289af5e7a62c
 vendor/lib64/libsubsystem_control.so|b2e8c7eb9d999137ae99ea38f85d7dac59c6dcc2
 
-# Thermal - from phoenix_sprout-11-RKQ1.201123.002
--vendor/lib/libthermalclient.so|2506026608690f1f91eebbafc622c51857354dfe
--vendor/lib64/libthermalclient.so|11a7b517eff8a0abea205c8cbbd8c21eea528b4f
-vendor/bin/thermal-engine|6dc35e88ec392068357544048a2f50b37ea766d3
-vendor/lib64/libthermalioctl.so|8bf02f5fbd8010f870955c8603b6c2c174168d2b
+# Thermal - from ginkgo V12.0.1.0.RCOCNXM
+vendor/bin/thermal-engine|6cd660e2b813896670a14be244d1046afe90064e
+vendor/lib/libthermalclient.so|0aab8039958acdd27af71c5c6923dcd7208f886f
+vendor/lib/libthermalfeature.so|52c35a4e2bc048839e4f9172cc2d299e2367a1fd
+vendor/lib64/libthermalclient.so|ed01fa6caeb9dfbddc0fafc197abe13f3c8b56f9
+vendor/lib64/libthermalfeature.so|f2b78560b6b87c19336ae48ea26d3af756123047
 
 # Time services -from LA.UM.9.6.2.r1-04100-89xx.0
 -vendor/app/TimeService/TimeService.apk|1a5f39aa2969feee50ff81ec870b5e2669ae515e
