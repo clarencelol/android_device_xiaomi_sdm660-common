@@ -139,8 +139,8 @@ vendor/lib64/libcdsp_default_listener.so|78899710541d42c57ff3d6a231f50e274e1d4cc
 vendor/lib64/libcdsprpc.so|9df65cc5f9eb60030a2013aa37a2906fe3be1c51
 vendor/lib64/libsysmon_cdsp_skel.so|40d3511922c744016c419983b18f97952c23fee5
 
-# Charger - from LA.UM.8.2.1.r1-05600-sdm660
-vendor/bin/hvdcp_opti|7e2c6def67e8d3eccb7c2df80fbe73652aef2a0e
+# Charger - from ginkgo V12.0.1.0.RCOCNXM
+vendor/bin/hvdcp_opti|673f4c4eb8fa0ad5f274a18081c8619f4b775596
 
 # CNE - from LA.UM.9.12.r1-10800-SMxx50.0 | LA.QSSI.11.0.r1-10400-qssi.0
 -vendor/app/CneApp/CneApp.apk|f90e9b497c0bd9328e8e63120615f2704489dbbc
