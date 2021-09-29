@@ -88,6 +88,10 @@ persist.vendor.camera.preview.ubwc=0
 vendor.video.disable.ubwc=1
 vidc.enc.dcvs.extra-buff-count=2
 
+# Chipset
+ro.soc.manufacturer=QTI
+ro.soc.model=SDM660
+
 # Data
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
