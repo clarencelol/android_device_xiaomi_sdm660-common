@@ -307,23 +307,10 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc \
     $(COMMON_PATH)/configs/idc/uinput-goodix.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-goodix.idc
 
-# IFAAService
-PRODUCT_PACKAGES += \
-    IFAAService \
-    org.ifaa.android.manager
-
-# IFAA JAR
-PRODUCT_BOOT_JARS += \
-    org.ifaa.android.manager
-
 # IMS
 PRODUCT_PACKAGES += \
-    ims-ext-common_system \
+    ims-ext-common \
     ims_ext_common.xml \
-
-# IMS JAR
-PRODUCT_BOOT_JARS += \
-    ims-ext-common_system
 
 # Init
 PRODUCT_PACKAGES += \
@@ -538,7 +525,6 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml \
-    rild \
     telephony-ext
 
 # RIL JAR
@@ -656,14 +642,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl
-
-# WiFi Display JAR
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
-# DeviceSettings
-PRODUCT_PACKAGES += \
-   DeviceSettings
    
 # IPA
 USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true

@@ -1,0 +1,2 @@
+dontaudit qti_init_shell { sysfs sysfs_leds sysfs_ssr fpc_sysfs }:file { setattr r_file_perms };
+dontaudit qti_init_shell { sysfs sysfs_devfreq sysfs_leds sysfs_battery_supply }:dir { setattr r_dir_perms };
