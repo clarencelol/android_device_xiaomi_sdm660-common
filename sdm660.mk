@@ -151,10 +151,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.authsecret@1.0-service
 
-# ATRACE_HAL
-PRODUCT_PACKAGES += \
-    android.hardware.atrace@1.0-service
-
 # Biometrics
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm660
@@ -169,7 +165,8 @@ PRODUCT_PACKAGES += \
     libhfp \
     libldacBT_dec \
     libsndmonitor \
-    vendor.qti.hardware.bluetooth_audio@2.0.vendor
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
+    android.hardware.bluetooth@1.0.vendor
 
 # Boot animation
 TARGET_BOOTANIMATION_SIZE := 1080p
@@ -201,6 +198,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service
 
+# Crypto
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@3.0.vendor
+
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk )
 
@@ -216,6 +218,7 @@ endif
 # Display
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
+    android.frameworks.displayservice@1.0.vendor \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.allocator@3.0-impl \
@@ -237,15 +240,15 @@ PRODUCT_PACKAGES += \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor
 
-# DeviceDoze
-PRODUCT_PACKAGES += \
-    DeviceDoze
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
-    android.hardware.drm@1.3-service.clearkey
+    android.hardware.drm@1.3-service.clearkey \
+    android.hardware.drm@1.3.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.0.vendor
 
 # Freeform Multiwindow
 PRODUCT_COPY_FILES += \
@@ -262,6 +265,15 @@ PRODUCT_PACKAGES += \
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0.vendor \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@1.2.vendor \
+    android.hardware.gnss@2.0.vendor \
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.gnss@3.0.vendor
 
 # GPS / Location
 PRODUCT_PACKAGES += \
@@ -307,23 +319,10 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc \
     $(COMMON_PATH)/configs/idc/uinput-goodix.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-goodix.idc
 
-# IFAAService
-PRODUCT_PACKAGES += \
-    IFAAService \
-    org.ifaa.android.manager
-
-# IFAA JAR
-PRODUCT_BOOT_JARS += \
-    org.ifaa.android.manager
-
 # IMS
 PRODUCT_PACKAGES += \
-    ims-ext-common_system \
+    ims-ext-common \
     ims_ext_common.xml \
-
-# IMS JAR
-PRODUCT_BOOT_JARS += \
-    ims-ext-common_system
 
 # Init
 PRODUCT_PACKAGES += \
@@ -541,6 +540,22 @@ PRODUCT_PACKAGES += \
     rild \
     telephony-ext
 
+# RIL
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio.config@1.1.vendor \
+    android.hardware.radio.config@1.2 \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0 \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2 \
+    android.hardware.secure_element@1.2.vendor \
+    android.hardware.secure_element@1.1 \
+    android.hardware.secure_element@1.1.vendor \
+    android.hardware.secure_element@1.0.vendor
+
 # RIL JAR
 PRODUCT_BOOT_JARS += \
     telephony-ext
@@ -656,14 +671,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl
-
-# WiFi Display JAR
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
-# DeviceSettings
-PRODUCT_PACKAGES += \
-   DeviceSettings
    
 # IPA
 USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
