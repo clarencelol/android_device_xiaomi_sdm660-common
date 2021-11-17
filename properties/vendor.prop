@@ -145,6 +145,7 @@ persist.demo.hdmirotationlock=false
 ro.opengles.version=196610
 ro.vendor.display.cabl=2
 vendor.display.enable_default_color_mode=1
+vendor.display.idle_time=32767
 
 # GPS
 persist.backup.ntpServer="0.pool.ntp.org"
