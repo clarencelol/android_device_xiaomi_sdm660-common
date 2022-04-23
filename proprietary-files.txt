@@ -112,6 +112,10 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|89e35853581cb73b76efc
 vendor/lib64/libbt-hidlclient.so|2e5e52f2e70157cee2079b44786b3788af333318
 vendor/lib64/libbtnv.so|97a565f4ad7678525fe112e30e51bf754d02c5fa
 
+# Bluetooth - from jasmine V11.0.28.0.QDIMIXM
+vendor/lib/liba2dpoffload.so|440f208d7c9737cc885ec80925f80c37d6f9e227
+vendor/lib64/liba2dpoffload.so|8a24de034dfef2de1978a77114fe16c237d70078
+
 # Bluetooth (A2DP) - from lemon RKQ1.201004.002
 vendor/lib/btaudio_offload_if.so|7c032ba00c5bbb7a6e265339dc63341888efe55f
 vendor/lib/hw/audio.bluetooth_qti.default.so|4128b72db0c619790030dda66edb24faef0b4ecc
