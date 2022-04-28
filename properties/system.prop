@@ -44,6 +44,9 @@ renderthread.skia.reduceopstasksplitting=true
 ro.qualcomm.cabl=0
 sdm.debug.disable_skip_validate=1
 
+# Disable remote keyguard animation
+persist.wm.enable_remote_keyguard_animation=0
+
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
