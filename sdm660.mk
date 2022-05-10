@@ -79,7 +79,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
     audio.a2dp.default \
-    audio.primary.sdm660 \
     audio.r_submix.default \
     audio.usb.default \
     audio.usbv2.default \
@@ -91,7 +90,6 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libtinycompress \
     libvolumelistener \
     tinymix
 
