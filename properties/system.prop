@@ -124,10 +124,12 @@ persist.radio.add_power_save=1
 persist.radio.VT_CAM_INTERFACE=2 
 persist.radio.data_con_rprt=1
 persist.vendor.ims.disableADBLogs=1
+persist.vendor.ims.disableDebugLogs=1
 persist.vendor.ims.disableIMSLogs=1
+persist.vendor.ims.disableQXDMLogs=1
 persist.vendor.radio.enable_temp_dds=true
 persist.vendor.radio.force_on_dc=true
-ril.subscription.types=RUIM
+ril.subscription.types=NV,RUIM
 
 # SELinux
 ro.build.selinux=1
