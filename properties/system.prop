@@ -52,6 +52,7 @@ persist.sys.fuse.passthrough.enable=true
 
 # Surfaceflinger
 debug.sf.hw=1
+debug.sf.enable_egl_image_tracker=true
 debug.sf.enable_hwc_vds=0
 debug.sf.latch_unsignaled=1
 debug.sf.early_phase_offset_ns=500000
