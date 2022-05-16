@@ -839,8 +839,8 @@ vendor/etc/init/init_thermal-engine.rc|a0310f09da9f09c67e110607b73aec9f9f981c4c
 vendor/bin/time_daemon|6dca9af6adbe563783ff8d93f165f7e8ab92828c
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 
-# Wifi - from LA.UM.9.11.r1-04500-NICOBAR.0
-vendor/bin/cnss-daemon|a32c66984f3ec7e4b12406c56500a36a3571f087
+# Wifi - from jasmine V11.0.28.0.QDIMIXM
+vendor/bin/cnss-daemon|a371213adc8fc7677d519c8d942761ffeee0f345
 
 # Common Camera - from Pie
 vendor/lib/libchromaflash.so|cf85560822e04014b8950a1abae9c2843069101d
