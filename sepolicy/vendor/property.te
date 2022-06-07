@@ -1,3 +1,6 @@
 type hal_fingerprint_prop, property_type;
 type mlipay_prop, property_type;
 type thermal_engine_prop, property_type;
+
+#MWQEM
+vendor_restricted_prop(vendor_mwqem_prop);

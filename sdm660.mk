@@ -194,7 +194,9 @@ endif
 # fwk-detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor
+    libqti_vndfwk_detect.vendor \
+    libvndfwk_detect_jni.qti \
+    libvndfwk_detect_jni.qti.vendor
 
 # GPS / Location
 PRODUCT_PACKAGES += \
@@ -333,7 +335,11 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.0 \
+    android.system.net.netd@1.1 \
+    android.hardware.radio@1.6 \
+    android.hardware.radio.config@1.3 \
+    android.hardware.radio.deprecated@1.0 \
+    android.hardware.secure_element@1.2 \
     rild \
     librmnetctl \
     libprotobuf-cpp-full
@@ -343,6 +349,8 @@ PRODUCT_PACKAGES += \
     ims_ext_common.xml \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
+    qti-telephony-hidl-wrapper-prd \
+    qti_telephony_hidl_wrapper_prd.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml \
     telephony-ext
