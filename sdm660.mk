@@ -74,6 +74,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl:32 \
+    android.hardware.bluetooth@1.0.vendor \
     audio.bluetooth.default \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor
 
@@ -147,6 +148,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 endif
 
+# Crypto
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@3.0.vendor
+
 # Display
 PRODUCT_PACKAGES += \
     gralloc.sdm660 \
@@ -154,11 +160,13 @@ PRODUCT_PACKAGES += \
     memtrack.sdm660 \
     libdisplayconfig \
     libtinyxml \
+    libtinyxml.vendor \
     libqdMetaData \
     libqdMetaData.system
 
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
+    android.frameworks.displayservice@1.0.vendor \
     android.hardware.graphics.allocator@2.0-impl:64 \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
@@ -179,6 +187,7 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4.vendor \
     android.hardware.drm@1.4-service.clearkey
 
 # FM
@@ -326,6 +335,7 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson
+    libjson.vendor \
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
@@ -334,10 +344,15 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1 \
+    android.system.net.netd@1.1.vendor \
     android.hardware.radio@1.6 \
+    android.hardware.radio@1.6.vendor \
     android.hardware.radio.config@1.3 \
+    android.hardware.radio.config@1.3.vendor \
     android.hardware.radio.deprecated@1.0 \
+    android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2 \
+    android.hardware.secure_element@1.2.vendor \
     rild \
     librmnetctl \
     libprotobuf-cpp-full
@@ -363,6 +378,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service
 
