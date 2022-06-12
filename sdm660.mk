@@ -259,6 +259,7 @@ PRODUCT_PACKAGES += \
     init.msm.usb.configfs.rc \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
+    init.qti.dcvs.sh \
     init.qcom.rc \
     init.qcom.sh \
     init.qcom.usb.rc \
