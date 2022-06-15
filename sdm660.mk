@@ -257,8 +257,6 @@ PRODUCT_COPY_FILES += \
 # Init
 PRODUCT_PACKAGES += \
     init.msm.usb.configfs.rc \
-    init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh \
     init.qcom.power.rc \
     init.qti.dcvs.sh \
     init.qcom.rc \
