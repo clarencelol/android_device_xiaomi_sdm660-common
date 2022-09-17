@@ -116,12 +116,6 @@ vendor/lib64/libbtnv.so|97a565f4ad7678525fe112e30e51bf754d02c5fa
 vendor/lib/liba2dpoffload.so|440f208d7c9737cc885ec80925f80c37d6f9e227
 vendor/lib64/liba2dpoffload.so|8a24de034dfef2de1978a77114fe16c237d70078
 
-# Bluetooth (A2DP) - from lemon RKQ1.201004.002
-vendor/lib/btaudio_offload_if.so|7c032ba00c5bbb7a6e265339dc63341888efe55f
-vendor/lib/hw/audio.bluetooth_qti.default.so|4128b72db0c619790030dda66edb24faef0b4ecc
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|4bed8d0cc4d2747a6f48fbbff5cd01dbc42c28d8
-vendor/lib/libbluetooth_audio_session_qti.so|52aea374898fa426e86c805096669ecc0b41f6a5
-
 # Bluetooth (aptX) - from sunfish RQ1A.201205.008
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
