@@ -221,9 +221,6 @@ on boot
     mkdir /data/vendor/sensors
     chown system system /data/vendor/sensors
 
-    # limit discard size to 128MB in order to avoid long IO latency
-    write /sys/block/sda/queue/discard_max_bytes 134217728
-
     start vendor.qcrild
     start vendor.qcrild2
     start vendor.dataqti
