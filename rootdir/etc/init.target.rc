@@ -67,7 +67,6 @@ on late-fs
     start vendor.hwcomposer-2-1
     start vendor.configstore-hal
     start vendor.gralloc-4-0
-    start vendor.light
 
     # Wait for hwservicemanager ready since fsck might be triggered in mount_all --late
     # In such case, init won't responce the property_set from hwservicemanager and then
