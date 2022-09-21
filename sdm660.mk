@@ -26,9 +26,6 @@ endif
 # Disable APEX compression
 PRODUCT_COMPRESSED_APEX := false
 
-# Don't dexpreopt prebuilts. (For GMS).
-DONT_DEXPREOPT_PREBUILTS := true
-
 # Inherit proprietary files
 $(call inherit-product, vendor/xiaomi/sdm660-common/sdm660-common-vendor.mk)
 
@@ -355,21 +352,6 @@ PRODUCT_COPY_FILES += \
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
-
-# Optimise package manager dex flags
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    pm.dexopt.boot=verify \
-    pm.dexopt.first-boot=quicken \
-    pm.dexopt.install=speed-profile \
-    pm.dexopt.bg-dexopt=everything
-
-ifneq ($(AB_OTA_PARTITIONS),)
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    pm.dexopt.ab-ota=quicken
-endif
-
-# Optimize everything for preopt
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 
 # OMX
 PRODUCT_PACKAGES += \
