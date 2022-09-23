@@ -4,6 +4,9 @@
 # Biometric
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.xiaomi_sdm660                              u:object_r:hal_fingerprint_sdm660_exec:s0
 
+# Device nodes
+/dev/stune(/.*)?	                                                                                                           u:object_r:cgroup:s0
+
 # Executables
 /vendor/bin/sh                                                                                                                     u:object_r:vendor_shell_exec:s0
 
