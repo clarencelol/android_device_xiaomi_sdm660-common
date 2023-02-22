@@ -138,11 +138,6 @@ PRODUCT_PACKAGES += \
 # Boot animation
 TARGET_BOOTANIMATION_SIZE := 1080p
 
-# Codec2 modules
-PRODUCT_PACKAGES += \
-    com.android.media.swcodec \
-    libsfplugin_ccodec
-
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service
