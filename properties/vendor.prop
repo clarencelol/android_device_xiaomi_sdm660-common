@@ -205,6 +205,7 @@ telephony.lteOnCdmaDevice=1
 debug.egl.hw=1
 debug.enable.sglscale=1
 debug.sf.recomputecrop=0
+ro.config.avoid_gfx_accel=true
 
 # Sensors
 ro.vendor.sensors.facing=false
