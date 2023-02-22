@@ -223,6 +223,7 @@ ro.soc.model=SDM660
 # Surfaceflinger
 debug.sf.hw=1
 debug.sf.enable_egl_image_tracker=true
+debug.sf.enable_gl_backpressure=1
 debug.sf.enable_hwc_vds=0
 debug.sf.enable_transaction_tracing=false
 debug.sf.auto_latch_unsignaled=true
