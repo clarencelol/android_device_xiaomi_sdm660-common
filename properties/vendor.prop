@@ -127,6 +127,7 @@ drm.service.enabled=true
 
 # Display
 debug.gralloc.enable_fb_ubwc=1
+debug.sf.treat_170m_as_sRGB=1
 dev.pm.dyn_samplingrate=1
 persist.hwc.mdpcomp.enable=true
 persist.log.tag.OpenGLRenderer=S
