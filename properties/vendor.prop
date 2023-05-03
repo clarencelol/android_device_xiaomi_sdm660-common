@@ -197,6 +197,8 @@ telephony.lteOnCdmaDevice=1
 
 # Rendering
 debug.egl.hw=0
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
 ro.config.avoid_gfx_accel=true
 ro.hwui.render_ahead=3
 
