@@ -561,7 +561,7 @@ PRODUCT_COPY_FILES += \
 # VNDK
 PRODUCT_PACKAGES += \
     libdng_sdk.vendor_32 \
-    libstdc++.vendor_32  \
+    libstdc++_vendor_32  \
     vndk-ext \
     com.android.vndk.current.on_vendor
 
